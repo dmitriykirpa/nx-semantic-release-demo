@@ -1,13 +1,5 @@
-import NxWelcome from './nx-welcome';
-
 export function App() {
-  return (
-    <>
-      <NxWelcome title="app2" />
-
-      <div />
-    </>
-  );
+  return <h1>App2</h1>;
 }
 
 export default App;
