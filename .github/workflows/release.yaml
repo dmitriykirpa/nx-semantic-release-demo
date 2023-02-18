@@ -1,0 +1,44 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: 'App to release'
+        required: true
+        default: 'app1'
+        type: choice
+        options:
+          - app1
+          - app2
+          - app3
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v3
+      - name: Setup Git
+        run: |
+          git config user.name "GitHub Bot"
+          git config user.email "gituser@example.com"
+      - run: npm ci
+      - name: Version
+        shell: bash
+        run: |
+          npx nx run $APP:version --base=$LAST_RELEASE_TAG --head=$NX_HEAD
+          git tag -f LAST_RELEASE_TAG
+          git push origin $LAST_RELEASE_TAG --force -o ci.skip
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          APP: ${{ inputs.app }}
+          LAST_RELEASE_TAG: ${{ inputs.app }}-last-release
