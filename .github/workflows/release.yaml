@@ -34,6 +34,7 @@ jobs:
       - name: Version
         shell: bash
         run: |
+          git tag -l
           npx nx run $APP:version --base=$LAST_RELEASE_TAG --head=$NX_HEAD
           git tag -f LAST_RELEASE_TAG
           git push origin $LAST_RELEASE_TAG --force -o ci.skip
