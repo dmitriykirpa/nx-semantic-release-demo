@@ -71,7 +71,8 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": ["app1:github"]
+        "postTargets": ["app1:github"],
+        "push": true
       }
     },
     "github": {
