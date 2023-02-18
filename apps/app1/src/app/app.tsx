@@ -1,7 +1,5 @@
 export function App() {
-  return (
-    <h1>App1</h1>
-  );
+  return <h1>App1</h1>;
 }
 
 export default App;
