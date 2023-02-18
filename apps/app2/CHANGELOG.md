@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.2.0](https://github.com/dmitriykirpa/nx-semantic-release-demo/compare/app2-1.1.0...app2-1.2.0) (2023-02-18)
+
+
+### Features
+
+* update app component ([46dd7ce](https://github.com/dmitriykirpa/nx-semantic-release-demo/commit/46dd7ceb0f28d69e7a720d5dcec6154660a6e39d))
+
 ## [1.1.0](https://github.com/dmitriykirpa/nx-semantic-release-demo/compare/app2-1.0.0...app2-1.1.0) (2023-02-18)
 
 
