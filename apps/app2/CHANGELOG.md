@@ -2,6 +2,18 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.3.0](https://github.com/dmitriykirpa/nx-semantic-release-demo/compare/app2-1.2.0...app2-1.3.0) (2023-02-21)
+
+
+### Features
+
+* add new feature ([bcd063f](https://github.com/dmitriykirpa/nx-semantic-release-demo/commit/bcd063f4be119e3138a1514af06f8e899e203ab4))
+
+
+### Bug Fixes
+
+* fix app2 new feature ([ea651b8](https://github.com/dmitriykirpa/nx-semantic-release-demo/commit/ea651b8b4fa887e48196391b6526e16ed1828e1d))
+
 ## [1.2.0](https://github.com/dmitriykirpa/nx-semantic-release-demo/compare/app2-1.1.0...app2-1.2.0) (2023-02-18)
 
 
