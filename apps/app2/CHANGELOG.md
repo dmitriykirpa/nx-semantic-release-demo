@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [1.3.1](https://github.com/dmitriykirpa/nx-semantic-release-demo/compare/app2-1.3.0...app2-1.3.1) (2023-02-23)
+
+
+### Bug Fixes
+
+* update app.tsx ([#3](https://github.com/dmitriykirpa/nx-semantic-release-demo/issues/3)) ([0d6fbee](https://github.com/dmitriykirpa/nx-semantic-release-demo/commit/0d6fbee3043543a75a2c817840cb1c35207d9af3))
+
 ## [1.3.0](https://github.com/dmitriykirpa/nx-semantic-release-demo/compare/app2-1.2.0...app2-1.3.0) (2023-02-21)
 
 
